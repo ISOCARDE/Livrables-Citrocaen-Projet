@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
+  <uml:Model xmi:id="_JFWRkD8JEeOsMfLf8iW0hA" name="SysMLmodel">
+    <packagedElement xmi:type="uml:Package" xmi:id="_eOVEMD8OEeOsMfLf8iW0hA" name="[package] Contrainte [Exigences des interfaces protocolaires]">
+      <packagedElement xmi:type="uml:Class" xmi:id="_5TAHQD8VEeOsMfLf8iW0hA" name="Communiquer par liaison série"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_R9vtQD8XEeOsMfLf8iW0hA" name="Utiliser coorectement le transceiver"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_IH-skD8YEeOsMfLf8iW0hA" name="Utiliser correctement le contrôleur PHY RJ-45"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dt66QD8YEeOsMfLf8iW0hA" name="Sécuriser la connection Wifi"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-a_NYD8YEeOsMfLf8iW0hA" clientDependency="_ZdLPED8eEeOsMfLf8iW0hA" name="Respecter le protocole">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_uNBUgD8ZEeOsMfLf8iW0hA" name="&quot;Respecter la mise en forme de la trame choisie.&quot;"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_qstPcD8ZEeOsMfLf8iW0hA" name="&quot;Respecter le débit.&quot;"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_ZdLPED8eEeOsMfLf8iW0hA" name="&lt;&lt;refine>>" client="_-a_NYD8YEeOsMfLf8iW0hA" supplier="_5TAHQD8VEeOsMfLf8iW0hA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sxC3AD8fEeOsMfLf8iW0hA" clientDependency="_jbWdgD8gEeOsMfLf8iW0hA" name="Respecter le débit"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LBQtMD8gEeOsMfLf8iW0hA" clientDependency="_lAyKQD8gEeOsMfLf8iW0hA" name="Prévoir un protocole évolutif"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_jbWdgD8gEeOsMfLf8iW0hA" name="&lt;&lt;refine>>" client="_sxC3AD8fEeOsMfLf8iW0hA" supplier="_R9vtQD8XEeOsMfLf8iW0hA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_lAyKQD8gEeOsMfLf8iW0hA" name="&lt;&lt;refine>>" client="_LBQtMD8gEeOsMfLf8iW0hA" supplier="_R9vtQD8XEeOsMfLf8iW0hA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_qiYPwD8OEeOsMfLf8iW0hA" name="[package] Contrainte [Éxigences du processeur application de contrôle/supervision]">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_6pgVcD88EeO2d4f4CRsVnw">
+        <body>Le MCU utilisé devra être un PIC32MX795F512L proposé par Microchip et devra porter FreeRTOS</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_EORmYD80EeO2d4f4CRsVnw" name="Commander au moins 4 modules boost converter"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_5FAWcD80EeO2d4f4CRsVnw" clientDependency="_8RICQD82EeO2d4f4CRsVnw" name="Obtenir une solution évolutive"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_8RICQD82EeO2d4f4CRsVnw" name="&lt;&lt;refine>>" client="_5FAWcD80EeO2d4f4CRsVnw" supplier="_EORmYD80EeO2d4f4CRsVnw"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rMg1QD83EeO2d4f4CRsVnw" clientDependency="_o5WqYD84EeO2d4f4CRsVnw" name="Proposer des moyens de communication"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_IkGaUD84EeO2d4f4CRsVnw" clientDependency="_ve4M4D84EeO2d4f4CRsVnw" name="Communiquer avec un ordinateur"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YmF3QD84EeO2d4f4CRsVnw" clientDependency="_yaOjsD84EeO2d4f4CRsVnw" name="Communiquer avec une tablette"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_o5WqYD84EeO2d4f4CRsVnw" name="&lt;&lt;refine>>" client="_rMg1QD83EeO2d4f4CRsVnw" supplier="_EORmYD80EeO2d4f4CRsVnw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_ve4M4D84EeO2d4f4CRsVnw" name="&lt;&lt;refine>>" client="_IkGaUD84EeO2d4f4CRsVnw" supplier="_rMg1QD83EeO2d4f4CRsVnw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_yaOjsD84EeO2d4f4CRsVnw" name="&lt;&lt;refine>>" client="_YmF3QD84EeO2d4f4CRsVnw" supplier="_rMg1QD83EeO2d4f4CRsVnw"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sp3SID85EeO2d4f4CRsVnw" clientDependency="_JNwJYD86EeO2d4f4CRsVnw" name="Commander le convertisseur élévateur de tension"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_JNwJYD86EeO2d4f4CRsVnw" name="« derivereqt »" client="_sp3SID85EeO2d4f4CRsVnw" supplier="_EORmYD80EeO2d4f4CRsVnw"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nTyI0D86EeO2d4f4CRsVnw" clientDependency="_wnw1oD86EeO2d4f4CRsVnw" name="Assurer l'asservissement autonome"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_wnw1oD86EeO2d4f4CRsVnw" name="&lt;&lt;refine>>" client="_nTyI0D86EeO2d4f4CRsVnw" supplier="_sp3SID85EeO2d4f4CRsVnw"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_M8xG4D88EeO2d4f4CRsVnw" clientDependency="_YLMuMD88EeO2d4f4CRsVnw" name="Intégrer l'algorithme"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_YLMuMD88EeO2d4f4CRsVnw" name="« derivereqt »" client="_M8xG4D88EeO2d4f4CRsVnw" supplier="_nTyI0D86EeO2d4f4CRsVnw"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_U04V0D9AEeO2d4f4CRsVnw" clientDependency="_o00PAD9AEeO2d4f4CRsVnw" name="Détecter la commande">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_h-hFkD9AEeO2d4f4CRsVnw" annotatedElement="_U04V0D9AEeO2d4f4CRsVnw">
+          <body>En l'absence de charge utile (courant de sortie 0A) la LED devra clignoter avec une périodicité de 500ms (500ms sec allumée, 500ms sec éteinte …). En cas de présence d'une charge, la LED restera allumée.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_o00PAD9AEeO2d4f4CRsVnw" name="« derivereqt »" client="_U04V0D9AEeO2d4f4CRsVnw" supplier="_sp3SID85EeO2d4f4CRsVnw"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hrMPAD9CEeO2d4f4CRsVnw" clientDependency="_Ib5fkD9DEeO2d4f4CRsVnw" name="Réaliser le jeu de commande de configuration"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_Ib5fkD9DEeO2d4f4CRsVnw" name="&lt;&lt;refine>>" client="_hrMPAD9CEeO2d4f4CRsVnw" supplier="_rMg1QD83EeO2d4f4CRsVnw"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vc_VgD9DEeO2d4f4CRsVnw" clientDependency="_88iq4D9DEeO2d4f4CRsVnw" name="Respecter l'affichage donné par CITROCAEN"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_88iq4D9DEeO2d4f4CRsVnw" name="&lt;&lt;refine>>" client="_vc_VgD9DEeO2d4f4CRsVnw" supplier="_hrMPAD9CEeO2d4f4CRsVnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Gm34cD8TEeOsMfLf8iW0hA" name="[package] Contrainte [Éxigences du réseau de modules boost à interfacer]">
+      <packagedElement xmi:type="uml:Class" xmi:id="_SgT64D8vEeO2d4f4CRsVnw" name="Effectuer une élévation locale de la tension individuellement">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_BffBsD8wEeO2d4f4CRsVnw" name="Superviser chaque boost converter"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_KQpVUD8wEeO2d4f4CRsVnw" name="Controler chaque boost converter"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_L9oUMD8zEeO2d4f4CRsVnw" clientDependency="_3kl3ID81EeO2d4f4CRsVnw __1jnwD81EeO2d4f4CRsVnw" name="Communiquer avec chaque boost converter"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_3kl3ID81EeO2d4f4CRsVnw" name="« derivereqt »" client="_L9oUMD8zEeO2d4f4CRsVnw" supplier="_BffBsD8wEeO2d4f4CRsVnw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="__1jnwD81EeO2d4f4CRsVnw" name="« derivereqt »" client="_L9oUMD8zEeO2d4f4CRsVnw" supplier="_KQpVUD8wEeO2d4f4CRsVnw"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JF-jsD8JEeOsMfLf8iW0hA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JF_KwD8JEeOsMfLf8iW0hA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_TZ_nULU5EduiKqCzJMWbGw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JJVZsD8JEeOsMfLf8iW0hA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JJWAwD8JEeOsMfLf8iW0hA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_Gx8MgLX7EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JJWAwT8JEeOsMfLf8iW0hA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JJWAwj8JEeOsMfLf8iW0hA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_fSw28LX7EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JJWAwz8JEeOsMfLf8iW0hA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JJWAxD8JEeOsMfLf8iW0hA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_rpx28LX7EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JJWAxT8JEeOsMfLf8iW0hA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JJWn0D8JEeOsMfLf8iW0hA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//constraints"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_5WYJ0LX7EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JJWn0T8JEeOsMfLf8iW0hA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JJWn0j8JEeOsMfLf8iW0hA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_C2zXMLX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JJWn0z8JEeOsMfLf8iW0hA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JJWn1D8JEeOsMfLf8iW0hA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_NxdG4LX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JJWn1T8JEeOsMfLf8iW0hA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JJXO4D8JEeOsMfLf8iW0hA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_OOJC4LX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JJXO4T8JEeOsMfLf8iW0hA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JJXO4j8JEeOsMfLf8iW0hA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//interactions"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_meOioLX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JJXO4z8JEeOsMfLf8iW0hA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JJXO5D8JEeOsMfLf8iW0hA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//statemachines"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_nAF5kLX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JJX18D8JEeOsMfLf8iW0hA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JJX18T8JEeOsMfLf8iW0hA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//usecases"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_neZmMLX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_5UJWwD8VEeOsMfLf8iW0hA" text="&quot;Le protocole se basera sur la norme RS-232.&quot;" id="0.1" base_Class="_5TAHQD8VEeOsMfLf8iW0hA"/>
+  <Requirements:Requirement xmi:id="_R_BfoD8XEeOsMfLf8iW0hA" text="&quot;Le transceiver sera compatible avec le protocole plug-and-play mis en place.&quot;" id="0.2" base_Class="_R9vtQD8XEeOsMfLf8iW0hA"/>
+  <Requirements:Requirement xmi:id="_IIVR4D8YEeOsMfLf8iW0hA" text="&quot;Le protocole Ethernet sera respecté.&quot;" id="0.3" base_Class="_IH-skD8YEeOsMfLf8iW0hA"/>
+  <Requirements:Requirement xmi:id="_duRfkD8YEeOsMfLf8iW0hA" text="&quot;L'identification par clé WEP pourra être réalisée.&quot;" id="0.4" base_Class="_dt66QD8YEeOsMfLf8iW0hA"/>
+  <Requirements:Requirement xmi:id="_-bXn4D8YEeOsMfLf8iW0hA" text="&quot;Le protocole RS-232 sera respectée et les attributs ci-dessous seront utilisés.&quot;" id="0.11" base_Class="_-a_NYD8YEeOsMfLf8iW0hA"/>
+  <Requirements:Requirement xmi:id="_qtTsYD8ZEeOsMfLf8iW0hA" text="&quot;La vitesse sera de 115,200 kBauds.&quot;" id="0.111" base_Class="_qstPcD8ZEeOsMfLf8iW0hA"/>
+  <Requirements:Requirement xmi:id="_uNa9ID8ZEeOsMfLf8iW0hA" text="&quot;Huit bits de donnés seront utilisés, ainsi qu'un bit de stop, pas de bits de parité, ni de controle de flux.&quot;" id="0.112" base_Class="_uNBUgD8ZEeOsMfLf8iW0hA"/>
+  <Requirements:Requirement xmi:id="_sxh_MD8fEeOsMfLf8iW0hA" text="&quot;La débit sera de 500 kBits/s.&quot;" id="0.21" base_Class="_sxC3AD8fEeOsMfLf8iW0hA"/>
+  <Requirements:Requirement xmi:id="_LB3xMD8gEeOsMfLf8iW0hA" text="&quot;Ne pas limiter l'analyse à 4 modules boost et prévoir une large plage de zones &quot;adressables&quot;.&quot;" id="0.22" base_Class="_LBQtMD8gEeOsMfLf8iW0hA"/>
+  <Requirements:Requirement xmi:id="_SnaocD8vEeO2d4f4CRsVnw" text="&quot;Chaque boost converter possèdera son propre régulateur de tension.&quot;" id="1.1" base_Class="_SgT64D8vEeO2d4f4CRsVnw"/>
+  <Requirements:Requirement xmi:id="_BfzKwD8wEeO2d4f4CRsVnw" text="&quot;La maintenance et l'évolutivité devront être considérées pour chaque régulateur de puissance.&quot;" id="1.11" base_Class="_BffBsD8wEeO2d4f4CRsVnw"/>
+  <Requirements:Requirement xmi:id="_KQ7CID8wEeO2d4f4CRsVnw" text="&quot;Chaque boost sera contrôler indépendamment des autres.&quot;" id="1.12" base_Class="_KQpVUD8wEeO2d4f4CRsVnw"/>
+  <Requirements:Requirement xmi:id="_L96BAD8zEeO2d4f4CRsVnw" text="&quot;Chaque module externalisé sera interfacé par un réseau industriel CAN.&quot;" id="1.111" base_Class="_L9oUMD8zEeO2d4f4CRsVnw"/>
+  <Requirements:Requirement xmi:id="_EOj6QD80EeO2d4f4CRsVnw" text="&quot;Le processeur application de contrôle/supervision devra être capable d'interfacer jusqu'à quatre modules (boost converter + MCU/CAN interface).&quot;" id="2.1" base_Class="_EORmYD80EeO2d4f4CRsVnw"/>
+  <Requirements:Requirement xmi:id="_5FQ1ID80EeO2d4f4CRsVnw" text="&quot;Le firmware devra être pensé pour être facilement évolutif.&quot;" id="2.11" base_Class="_5FAWcD80EeO2d4f4CRsVnw"/>
+  <Requirements:Requirement xmi:id="_rMyiED83EeO2d4f4CRsVnw" text="&quot;Proposer des moyens de communication et de reconfiguration.&quot;" id="2.12" base_Class="_rMg1QD83EeO2d4f4CRsVnw"/>
+  <Requirements:Requirement xmi:id="_IkYuMD84EeO2d4f4CRsVnw" text="&quot;Il devra proposer une interface réseau classique, ethernet vers un ordinateur (non prioritaire).&quot;" id="2.122" base_Class="_IkGaUD84EeO2d4f4CRsVnw"/>
+  <Requirements:Requirement xmi:id="_YpaRAD84EeO2d4f4CRsVnw" text="&quot;Il devra proposer une interface réseau WIFI en mode Ad-Hoc (infrastructure si possible) avec une tablette Android.&quot;" id="2.123" base_Class="_YmF3QD84EeO2d4f4CRsVnw"/>
+  <Requirements:Requirement xmi:id="_sqHw0D85EeO2d4f4CRsVnw" text="&quot;Commander numériquement et en temps réel un convertisseur élévateur de tension (boost converter).&quot;" id="2.13" base_Class="_sp3SID85EeO2d4f4CRsVnw"/>
+  <Requirements:Requirement xmi:id="_nUAyUD86EeO2d4f4CRsVnw" text="&quot;Sans la mise en oeuvre de l'interface CAN (vers processeur de supervision), le système devra être entièrement autonome et assurer l'asservissement temps réel.&quot;" id="2.131" base_Class="_nTyI0D86EeO2d4f4CRsVnw"/>
+  <Requirements:Requirement xmi:id="_M9A-gD88EeO2d4f4CRsVnw" text="&quot;Intégration C de l'algorithme.&quot;" id="2.1311" base_Class="_M8xG4D88EeO2d4f4CRsVnw"/>
+  <Requirements:Requirement xmi:id="_U1INcD9AEeO2d4f4CRsVnw" text="&quot;L'application devra détecter la présence ou non d'une charge.&quot;" id="2.132" base_Class="_U04V0D9AEeO2d4f4CRsVnw"/>
+  <Requirements:Requirement xmi:id="_hrcGoD9CEeO2d4f4CRsVnw" text="&quot;L'application devra proposer un shell afin de communiquer voir reconfigurer sans recompilation des variables d'environnement du firmware embarqué." id="2.121" base_Class="_hrMPAD9CEeO2d4f4CRsVnw"/>
+  <Requirements:Requirement xmi:id="_vdPNID9DEeO2d4f4CRsVnw" text="&quot;L'interface proposée par le MCU devra absolument respecter l'affichage donné dans les spécifications.&quot;" id="2.1211" base_Class="_vc_VgD9DEeO2d4f4CRsVnw"/>
+</xmi:XMI>
