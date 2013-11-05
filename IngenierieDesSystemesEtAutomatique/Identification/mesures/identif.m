@@ -1,0 +1,30 @@
+clc
+clear all
+close all
+
+%% Lecture des fichiers et détermination d'entrée et sortie pour 
+% la procédure d'identification 
+N = 64;
+
+for i = 0:N
+    num = num2str(i);
+    nomfichier = strcat('PWM_',num,'.csv');
+    data = csvread(nomfichier,3,0);
+
+%     time = data(:,1);
+%     PWM = data(:,2);
+    Vo = data(:,3);
+    Vi = data(:,4);
+    
+    Vout(i+1) = mean(Vo);
+    Vin(i+1) = mean(Vi);
+    rapport(i+1) = (1-i/100);
+    
+end
+Vout = 10*Vout;
+plot(rapport,Vout);
+
+%% Fonction de transfert du système identifié
+
+A = [1 -0.8665 -0.2105];
+B = [0 -79.63 78.59];
