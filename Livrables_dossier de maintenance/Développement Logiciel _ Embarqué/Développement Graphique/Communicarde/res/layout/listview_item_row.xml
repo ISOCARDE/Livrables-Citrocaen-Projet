@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/rowHeight"
+    android:orientation="horizontal"
+    android:padding="6dp" >
+
+    <LinearLayout
+        android:layout_width="@dimen/idWidth"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="5" >
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:contentDescription="@string/boostIconDescription" />
+
+        <LinearLayout
+            android:id="@+id/layoutBoostConverter"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtBoostConverter"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/txtBoostConverter"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/smallText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtId"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/smallText"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/seekBarWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="12" >
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/CustomSeekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:max="100"
+            android:secondaryProgress="@string/initProgressSeekBar" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textSize="@dimen/smallText"
+            android:visibility="visible"
+            android:weightSum="10" >
+
+            <TextView
+                android:id="@+id/txtSeekBar0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/valeur1"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/smallText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSeekBar18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:text="@string/valeur2"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/smallText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSeekBar24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/valeur3"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/smallText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSeekBar30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingRight="2dp"
+                android:text="@string/valeur4"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/smallText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSeekBar36"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/valeur5"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/smallText"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/txtVi"
+            android:layout_width="@dimen/infoBoostWidth"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtIl"
+            android:layout_width="@dimen/infoBoostWidth"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtPi"
+            android:layout_width="@dimen/infoBoostWidth"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtVo"
+            android:layout_width="@dimen/infoBoostWidth"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtIo"
+            android:layout_width="@dimen/infoBoostWidth"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/iconStats"
+        android:layout_width="@dimen/statistiquesWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/statsIconDescription"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

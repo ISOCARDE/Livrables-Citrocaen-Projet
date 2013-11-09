@@ -29,7 +29,7 @@ Présentation des différents choix et déroulement du projet.
 
 	-Livrables_dossiers de maintenance:
 Ici seront livrés les fichiers sources (binaires et précompilés) répondant aux
-spécifications de CITROCAEN (triés par, ainsi que les documents de maintenance 
+spécifications de CITROCAEN (triés par domaine d'application), ainsi que les documents de maintenance 
 relatifs à ces livrables.
 
 	-Documentations techniques:
@@ -43,7 +43,7 @@ description du projet "boost converter supervision interface".
 *******************************************************************************
 FOURNISSEUR : ISOCARDE
 CLIENT : CITROCAEN
-DATE DE FIN : 04/11/2013
+DATE DE FIN DE PROJET: 04/11/2013
 
 
 

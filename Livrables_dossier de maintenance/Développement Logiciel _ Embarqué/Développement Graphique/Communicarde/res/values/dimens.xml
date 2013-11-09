@@ -1,0 +1,19 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="header_height">75dp</dimen>
+    <dimen name="headerTexte_height">40dp</dimen>
+    <dimen name="headerTexte_width">700dp</dimen>
+    <dimen name="panneauGauche_height">325dp</dimen>
+    <dimen name="panneauGauche_width">230dp</dimen>
+    <dimen name="title_size">25sp</dimen>
+    <dimen name="footer_height">75dp</dimen>
+    <dimen name="infoBoostWidth">60dp</dimen>
+    <dimen name="idWidth">50dp</dimen>
+    <dimen name="seekBarWidth">300dp</dimen>
+    <dimen name="infoStatistiquesWidth">60dp</dimen>
+    <dimen name="rowHeight">60dp</dimen>
+    <dimen name="statistiquesWidth">100dp</dimen>
+    <dimen name="smallText">9sp</dimen>
+</resources>

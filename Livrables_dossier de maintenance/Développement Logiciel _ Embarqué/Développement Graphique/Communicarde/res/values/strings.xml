@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Communicarde</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_main">Communicarde for Android</string>
+    <string name="action_settings">Settings</string>
+    <string name="slogan">Where idea meets reality!</string>
+    <string name="content_description_bas_de_page"></string>
+    <string name="content_description_logo_citrocaen"></string>
+    <string name="texte_button1">Vue globale</string>
+    <string name="texte_button2">Statistiques</string>
+    <string name="texte_button3">Scripts</string>
+    <string name="contacts">ISOCARDE, http://www.isocarde.fr.ht/</string>
+    <string name="validerVolts">Souhaitez-vous valider votre choix?</string>
+    <string name="cancel">Non</string>
+    <string name="validate">Oui</string>
+    <string name="initProgressSeekBar">24</string>
+    <string name="vi">Vi (V)</string>
+    <string name="il">Il (A)</string>
+    <string name="pi">Pi (W)</string>
+    <string name="vo">Vo (V)</string>
+    <string name="io">Io (mA)</string>
+    <string name="statsIconDescription"></string>
+    <string name="boostIconDescription"></string>
+    <string name="menu_connexion">Connexion au serveur</string>
+    <string name="menu_deconnexion">Deconnexion du serveur</string>
+    <string name="permission_name">communicarde_permissions</string>
+    <string name="permission_label">communicarde_permissions</string>
+    <string name="permission_description"> <!-- Pour fonctionner, la supervision de boost converter necessite votre accord. ISOCARDE s'engage a respecter la confidentialite et l'integrite de toutes vos donnees. -->
+    </string>
+    <string name="title1">Where idea meets reality . . .</string>
+    <string name="txtBoostConverter">BOOST</string>
+    <string name="headerTxtBoostConverter">Id</string>
+    <string name="headerTxtConsigne">Consignes Vo* (V)</string>
+    <string name="headerTxtStatistiques">Statistiques</string>
+    <string name="valeur1">0</string>
+    <string name="valeur2">18</string>
+    <string name="valeur3">24</string>
+    <string name="valeur4">30</string>
+    <string name="valeur5">36</string>
+
+</resources>

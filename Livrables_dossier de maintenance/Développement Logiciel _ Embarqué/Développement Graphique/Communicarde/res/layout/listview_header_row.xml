@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font_type="http://schemas.android.com/apk/res/com.isocarde.citrocaen.communicarde"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="6dp" >
+
+    <LinearLayout
+        android:layout_width="@dimen/idWidth"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="7" >
+
+        <com.isocarde.citrocaen.communicarde.ui.IsocardeTextView
+            android:id="@+id/headerTxtBoostConverter"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/headerTxtBoostConverter"
+            android:textColor="@android:color/black"
+            font_type:ttf_name="fonts/rockb.ttf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/seekBarWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="12" >
+
+        <com.isocarde.citrocaen.communicarde.ui.IsocardeTextView
+            android:id="@+id/headerConsigne"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/headerTxtConsigne"
+            android:textColor="@android:color/black"
+            font_type:ttf_name="fonts/rockb.ttf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <com.isocarde.citrocaen.communicarde.ui.IsocardeTextView
+            android:id="@+id/vi"
+            android:layout_width="@dimen/infoBoostWidth"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/vi"
+            android:textColor="@android:color/black"
+            font_type:ttf_name="fonts/rockb.ttf" />
+
+        <com.isocarde.citrocaen.communicarde.ui.IsocardeTextView
+            android:id="@+id/il"
+            android:layout_width="@dimen/infoBoostWidth"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/il"
+            android:textColor="@android:color/black"
+            font_type:ttf_name="fonts/rockb.ttf" />
+
+        <com.isocarde.citrocaen.communicarde.ui.IsocardeTextView
+            android:id="@+id/pi"
+            android:layout_width="@dimen/infoBoostWidth"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/pi"
+            android:textColor="@android:color/black"
+            font_type:ttf_name="fonts/rockb.ttf" />
+
+        <com.isocarde.citrocaen.communicarde.ui.IsocardeTextView
+            android:id="@+id/vo"
+            android:layout_width="@dimen/infoBoostWidth"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/vo"
+            android:textColor="@android:color/black"
+            font_type:ttf_name="fonts/rockb.ttf" />
+
+        <com.isocarde.citrocaen.communicarde.ui.IsocardeTextView
+            android:id="@+id/io"
+            android:layout_width="@dimen/infoBoostWidth"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/io"
+            android:textColor="@android:color/black"
+            font_type:ttf_name="fonts/rockb.ttf" />
+    </LinearLayout>
+
+    <com.isocarde.citrocaen.communicarde.ui.IsocardeTextView
+        android:id="@+id/headerStatistiques"
+        android:layout_width="@dimen/statistiquesWidth"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/headerTxtStatistiques"
+        android:textColor="@android:color/black"
+        font_type:ttf_name="fonts/rockb.ttf" />
+
+</LinearLayout>
